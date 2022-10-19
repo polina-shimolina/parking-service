@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Список парковок {% endblock %}
+
+{% block content %}
+    <ul>
+    <div>Список доступных парковок</div>
+        {% for parking in data.parkings %}
+            {%  include 'parking_element.html' with elemnt=parking %}
+        {% empty %}
+            <li>Список доступных парковок пуст</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

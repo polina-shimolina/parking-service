@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %} Парковка № {{ data.parking.id }}{% endblock %}
+
+{% block content %}
+    <div class="parking-text">Информация о парковке  № {{ data.parking.id }}</div>
+    <div>Адресс: {{ data.parking.adress }}</div>
+
+{% endblock %}

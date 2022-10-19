@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %} Car parking service {% endblock %}
+
+{% block content %}
+    <div>Welcome to the car parking service</div>
+    <div>Today is {{ data.date }}</div>
+    <a href="{% url 'parks_url' %}">Показать список доступных парковок</a>
+{% endblock %}
